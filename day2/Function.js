@@ -21,7 +21,7 @@ var vfn = function() { // local function
 vfn();
 
 function lfn() { // local function
-    this.bunny = "funny";
+    this.bunny = "funny"; // WARNING! polluting globals
     console.log(`lfn ${this}`);
 }
 lfn();
@@ -70,4 +70,5 @@ printMe("hi","there");
 // dontHoistMe = 3 -> we can't use it here since its a 'let' variable and it will not be hoisted so we can't use it like this.
 var hoistme = 0; // this is also hoisted and moved to top scope
 let dontHoistMe = 0; // this is not hoisted and will be defined 
-// saurishphatak
+
+// everything in JS is Object

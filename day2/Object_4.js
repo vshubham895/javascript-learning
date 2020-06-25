@@ -1,1 +1,0 @@
-// 4th way of creating object
