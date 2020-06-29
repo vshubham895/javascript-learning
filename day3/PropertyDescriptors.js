@@ -32,3 +32,5 @@ eich.house = "HUGE";
 console.log(eich)
 // everything in JS is public, so always use property descriptors to restrict access
 // eich.name.enumerable = false; // we can't access it -> they are only private in JS
+// We usually use property descriptors for sharing the codebase -> api/library developers
+// so that others can't mess up with the code
